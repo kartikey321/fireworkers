@@ -1,15 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { create_document_from_fields, extract_fields_from_document } from './fields';
-import type * as Firestore from './types';
-import { get_firestore_endpoint } from './utils';
+import { create_document_from_fields, extract_fields_from_document } from './fields.js';
+import type * as Firestore from './types.js';
+import { get_firestore_endpoint } from './utils.js';
 
 /**
  * Gets a single document from Firestore.
  * Reference: {@link https://firebase.google.com/docs/firestore/reference/rest/v1/projects.databases.documents/createDocument}
  *
  * @param firestore
- * @param collection_path
- * @param fields
+ * @param args
  */
 export const create = async <Fields extends Record<string, any>>(
   { jwt, project_id }: Firestore.DB,

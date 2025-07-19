@@ -4,13 +4,16 @@
   "description": "Use Cloud Firestore inside Cloudflare Workers.",
   "sideEffects": false,
   "type": "module",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
-      "import": "./dist/index.js"
-    }
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
   },
   "files": [
     "dist"
@@ -62,7 +65,10 @@
     "typescript-eslint": "^8.23.0"
   },
   "dependencies": {
+    "crypto-browserify": "^3.12.1",
     "jose": "^5.9.6",
-    "superstruct": "^2.0.2"
+    "stream-browserify": "^3.0.0",
+    "superstruct": "^2.0.2",
+    "util": "^0.12.5"
   }
 }

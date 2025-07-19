@@ -1,5 +1,5 @@
-import type * as Firestore from './types';
-import { get_firestore_endpoint } from './utils';
+import type * as Firestore from './types.js';
+import { get_firestore_endpoint } from './utils.js';
 
 /**
  * Removes a document from Firestore.

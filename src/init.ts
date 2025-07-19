@@ -1,7 +1,7 @@
 import * as jose from 'jose';
 
-import type * as Firestore from './types';
-import { FIRESTORE_ENDPOINT } from './utils';
+import type * as Firestore from './types.js';
+import { FIRESTORE_ENDPOINT } from './utils.js';
 
 const alg = 'RS256';
 const aud = `${FIRESTORE_ENDPOINT}/`;

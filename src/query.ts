@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { extract_fields_from_document } from './fields';
-import type * as Firestore from './types';
-import { get_firestore_endpoint } from './utils';
+import { extract_fields_from_document } from './fields.js';
+import type * as Firestore from './types.js';
+import { get_firestore_endpoint } from './utils.js';
 
 type RunQueryRequest = {
   parent?: string;
