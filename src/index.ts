@@ -1,4 +1,6 @@
 export * from './create.js';
+export * from './data-helper.js';
+export * from './db-provider.js';
 export * from './get.js';
 export * from './init.js';
 export * from './query.js';

@@ -45,6 +45,7 @@
     "check": "tsc --noEmit",
     "format": "prettier --write ./src",
     "test": "pnpm playwright test",
+    "test:unit": "node --loader ./esbuild-test-loader.mjs --test tests/data-helper.test.ts",
     "test:headed": "pnpm playwright test --headed",
     "release": "changeset publish",
     "update": "pnpm update -i -L -r"

@@ -27,7 +27,7 @@ export type MappedValue = PrimitiveMappedValue | ArrayMappedValue | MapMappedVal
  * @param field_value
  * @returns
  */
-const convert_field_to_value = (field_value: unknown): Firestore.Value => {
+export const convert_field_to_value = (field_value: unknown): Firestore.Value => {
   // Array
   if (Array.isArray(field_value)) {
     return {
